@@ -7,3 +7,10 @@ while (counter < fact) {
   counter++;
 }
 console.log(result);
+
+let factorial = 5;
+let res = 1;
+for (let i = 1; i < factorial; i++) {
+  res = res * (i + 1);
+}
+console.log(res);

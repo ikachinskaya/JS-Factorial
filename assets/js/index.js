@@ -14,3 +14,22 @@ for (let i = 1; i < factorial; i++) {
   res = res * (i + 1);
 }
 console.log(res);
+
+const getFactorial = function (number) {
+  if (isNaN(number)) {
+    return null;
+  }
+  if (number < 0) {
+    return null;
+  }
+  if (number === 0) {
+    return 1;
+  }
+
+  let resultFact = 1;
+
+  for (let i = 1; i <= number; i++) {
+    resultFact = resultFact * i;
+  }
+  return resultFact;
+};
